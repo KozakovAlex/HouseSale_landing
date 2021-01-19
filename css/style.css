@@ -943,94 +943,132 @@ img {
   .footer__last-items {
     margin-bottom: 10px;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .header__menu-item {
-      margin-right: 15px;
-    }
-    .intro {
-      margin-bottom: 24px;
-    }
-    .intro__search {
-      padding: 5px;
-    }
-    .intro__form {
-      gap: 5px;
-    }
-    .company {
-      margin-bottom: 24px;
-    }
-    .company__card {
-      grid-column: span 3;
-      margin-bottom: 15px;
-    }
-    .company__card-descr {
-      min-height: 60px;
-    }
-    .company__advantages {
-      flex-wrap: wrap;
-    }
-    .company__advantages-descr {
-      flex-basis: 100%;
-      margin-bottom: 20px;
-    }
-    .company__advantages-title {
-      margin-bottom: 20px;
-    }
-    .company__advantages-item {
-      margin-bottom: 15px;
-    }
-    .company__callme {
-      padding: 10px;
-    }    
-    .company__callme-form {
-      width: 100%;
-    }
-    .ideas {
-      margin-bottom: 24px;
-    }
-    .ideas__card {
-      grid-column: span 2;
-    }
-    .ideas__inspiration {
-      padding-bottom: 29px;
-      margin-bottom: 29px;
-    }
-    /* .ideas__interior-choose {
-      flex-basis: 25%;
-    }
-    .ideas__interior-descr {
-      flex-basis: 75%;
-    } */
-    .ideas__interior {
-      flex-direction: column;
-    }
-    .ideas__interior-choose {
-      padding: 0;
-      margin-bottom: 15px;
-    }
-    .ideas__interior-title {
-      margin-bottom: 21px;
-    }
-    .footer__wrapper {
-      padding: 15px 0;
-    }
-    .footer__main {
-      margin-bottom: 15px;
-    }
-    .footer__countries {
-      padding: 15px 0;
-      margin-bottom: 15px;
-    }
-    .footer__countries-title {
-      margin-bottom: 15px;
-    }
-    .footer__countries-country {
-      margin-bottom: 15px;
-    }
+@media screen and (max-width: 768px) {
+  .header__menu-item {
+    margin-right: 15px;
+  }
+  .intro {
+    margin-bottom: 24px;
+  }
+  .intro__search {
+    padding: 5px;
+  }
+  .intro__form {
+    gap: 5px;
+  }
+  .company {
+    margin-bottom: 24px;
+  }
+  .company__card {
+    grid-column: span 3;
+    margin-bottom: 15px;
+  }
+  .company__card-descr {
+    min-height: 60px;
+  }
+  .company__advantages {
+    flex-wrap: wrap;
+  }
+  .company__advantages-descr {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .company__advantages-title {
+    margin-bottom: 20px;
+  }
+  .company__advantages-item {
+    margin-bottom: 15px;
+  }
+  .company__callme {
+    padding: 10px;
+  }    
+  .company__callme-form {
+    padding: 12px;
+    width: 100%;
+  }
+  .ideas {
+    margin-bottom: 24px;
+  }
+  .ideas__card {
+    grid-column: span 2;
+  }
+  .ideas__inspiration {
+    padding-bottom: 29px;
+    margin-bottom: 29px;
+  }
+  /* .ideas__interior-choose {
+    flex-basis: 25%;
+  }
+  .ideas__interior-descr {
+    flex-basis: 75%;
+  } */
+  .ideas__interior {
+    flex-direction: column;
+  }
+  .ideas__interior-choose {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .ideas__interior-title {
+    margin-bottom: 21px;
+  }
+  .footer__wrapper {
+    padding: 15px 0;
+  }
+  .footer__main {
+    margin-bottom: 15px;
+  }
+  .footer__countries {
+    padding: 15px 0;
+    margin-bottom: 15px;
+  }
+  .footer__countries-title {
+    margin-bottom: 15px;
+  }
+  .footer__countries-country {
+    margin-bottom: 15px;
+  }
+}
 
+@media screen and (max-width: 576px) {
+  .intro__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .intro__form-item-2 {
+    order: -1;
+    grid-column: span 2;
+  }
+  .intro__form-item-1,
+  .intro__form-item-3 {
+    grid-column: span 1;
+    margin-right: 0;
+  }
+  .intro__form-item-4,
+  .intro__form-item-5,
+  .intro__form-item-6,
+  .intro__form-item-7 {
+    grid-column: span 1;
+  }
+  .company__advantages-bckgr {
+    display: none;
+  }
+  .company__callme-form {
+    flex-wrap: wrap;
+  }
+  .company__callme-phonenumber {
+    /* flex-grow: 0; */
+    flex-basis: auto;
   }
 
+
+
+
+
 }
+
+
 
 /* Media end */
