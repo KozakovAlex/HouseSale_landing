@@ -17,6 +17,23 @@ upButton.onclick = function () {
   window.scrollTo(0, 0)
 }
 
+let headerBurger = document.querySelector('.header__burger');
+let headerMenu = document.querySelector('.header__menu');
+let headerMenuItems = document.querySelector('.header__menu-items');
+let headerMenuItem = document.querySelectorAll('.header__menu-item');
+
+headerBurger.onclick = function () {
+  headerMenu.classList.toggle('header__menu');
+  headerMenu.classList.toggle('header__menu_active');
+  headerMenuItems.classList.toggle('header__menu-items');
+  headerMenuItems.classList.toggle('header__menu-items_active');
+  // for (let eachItem of headerMenuItem) {
+  //   eachItem.classList.toggle('header__menu-item');
+  //   eachItem.classList.toggle('header__menu-item_active');
+  // }
+  
+}
+
 
 
 // let upButton = document.querySelector('.up-button');
