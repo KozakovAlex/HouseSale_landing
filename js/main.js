@@ -21,10 +21,16 @@ let headerBurger = document.querySelector('.header__burger');
 let headerMenu = document.querySelector('.header__menu');
 let headerMenuItems = document.querySelector('.header__menu-items');
 let headerMenuItem = document.querySelectorAll('.header__menu-item');
+let lineTop = document.querySelector('.line-top');
+let lineMiddle = document.querySelector('.line-middle');
+let lineBottom = document.querySelector('.line-bottom');
 
 headerBurger.onclick = function () {
   headerMenu.classList.toggle('header__menu');
   headerMenu.classList.toggle('header__menu_active');
+  lineTop.classList.toggle('line-top_active');
+  lineMiddle.classList.toggle('line-middle_active');
+  lineBottom.classList.toggle('line-bottom_active');
   headerMenuItems.classList.toggle('header__menu-items');
   headerMenuItems.classList.toggle('header__menu-items_active');
   // for (let eachItem of headerMenuItem) {
